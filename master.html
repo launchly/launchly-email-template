@@ -1,0 +1,182 @@
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<title>{{ subject }}</title>
+	<style type="text/css">
+		a:hover { text-decoration: none !important; }
+		h1 { color: #3c444a !important; font: bold 1.3em Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+		h2 { color:#545f66 !important; font-weight: normal; margin: 0; padding: 1em 0 0.5em 0; font-size: 1.25em; font-family: Helvetica, Arial, sans-serif;  }
+		h3 { color: #d0d7db !important; font-weight: normal; margin:0; padding: 0 0 1em 0; font-size: 1.2em; font-family: Helvetica, Arial, sans-serif; }
+
+		.banner{
+			padding: 0.5em 10px 1em 10px;
+			text-align:center;
+			background: #1f1f1f url('https://melbourne-systems.s3.amazonaws.com/asset/file/53719d7757817ea11000090c/border.gif') 0 100% repeat-x;
+			-webkit-transition: background 2s ease 0s;
+			-moz-transition: background 2s ease 0s;
+			transition: background 2s ease 0s;
+		}
+
+		.banner:hover {
+			background-position: 100px 100%;
+			-webkit-transition: background 2s ease 0s;
+			-moz-transition: background 2s ease 0s;
+			transition: background 2s ease 0s;
+		}
+
+		.banner h2 { font-size: 2em; color:#ffffff !important; margin-top:1em; }
+		.banner h2 a { color: #ffffff; text-decoration:none; }
+		.banner h3 { margin-bottom: 2em; }
+		.banner h3 a { color: #ffffff; text-decoration:underline; }
+
+		.info { background-color: #244f90; }
+		.success { background-color: #2aa54f; }
+		.success h3 { color: #ffffff !important; }
+		.failure { background-color:#d23271;  }
+		.failure h3 { color: #ffffff !important; }
+
+		p { color: #939ca1; font: normal 1.2em Helvetica, Arial, sans-serif; margin: 0; padding: 0 0 15px 0; line-height: 1.4em; }
+		p strong { color: #545f66;}
+		a { color: #24c4bc; text-decoration: none;}
+		a:hover { color: #0ca49c; text-decoration: underline; }
+		
+		.logo {
+			text-decoration:none;
+		}
+		
+		.logo img {
+			border: 0px;
+			padding: 25px;
+		}
+
+		.btn {
+			text-decoration:none;
+			background-color:#ffffff;
+			border:2px solid #24c4bc;
+			color:#24c4bc;			
+			padding:1em 1.2em;
+			display:inline-block;
+			margin:0px;
+			font-weight:bold;
+			-webkit-transition: all 1s ease;
+			-moz-transition: all 1s ease;
+			transition: all 1s ease;
+		}
+		
+		.btn:hover {
+			border:2px solid #0ca49c;
+			color:#0ca49c;			
+		}
+
+		.btn-success {
+			border:2px solid #24c4bc;
+			color:#24c4bc;
+		}
+
+		.btn-success:hover {
+			border:2px solid #0ca49c;
+			color:#0ca49c;			
+		}
+		
+		
+		.footer { font-size: 1em; text-align:center;color:#c2c2c2;margin:0px;padding: 15px 10px 0px 10px;font-family:Helvetica, Arial, sans-serif; }
+		.footer a {
+			color:#c2c2c2; text-decoration: underline;
+			-webkit-transition: all 1s ease;
+			-moz-transition: all 1s ease;
+			transition: all 1s ease;
+		}
+		.footer a:hover { color: #838383; text-decoration:none; }
+
+		.main-container { width: 850px; }
+		.body-content { padding: 40px 100px 0px 100px; text-align:center; background:#ffffff; }
+		
+		@media only screen and (max-device-width: 480px) {
+			h1 { font-size: 1.3em; }
+			h2 { font-size: 1.2em; }
+			h3 { font-size: 1.1em; }
+			p { font-size: 1em !important; }
+			.main-container { width: 100% !important }
+			.body-content { padding: 40px 50px 0px 50px; }
+		}
+
+		@media only screen and (max-device-width: 320px) {
+			.main-container { width: 100% !important }
+			.body-content { padding: 40px 10px 0px 10px; }
+			.footer { font-size: 0.8em !important; }
+		}
+		
+	</style>
+	<meta name="robots" content="noindex,nofollow">
+</head>
+
+<body bgcolor="#edeff0" style="margin:0;padding:0;background-color:#edeff0;text-align:center;">
+
+	<a href="{{ account.url(false) }}" class="logo">
+		<img src="https://melbourne-systems.s3.amazonaws.com/asset/file/53719d7c57817e3d930008c7/logo-small.png" width="40" height="40" alt="launch.ly">
+	</a>
+
+	<table class="main-container" cellpadding="0" cellspacing="0" border="0" align="center" bgcolor="#ffffff" style="background-color:#ffffff;padding:0px;font-family:Helvetica, Arial, sans-serif;background-color:#ffffff;background-image:none;background-repeat:repeat;background-position:top left;background-attachment:scroll;">
+
+		<tr>
+			<td>{{ content }}</td>
+		</tr>
+
+		<tr>
+			<td align="center" style="padding: 20px 0px 0px 0px;">
+
+				<br>
+												
+				<table width="100%">
+					<tr>
+						<td style="padding-left:60px;padding-right:60px;">
+							<p style="border-top-width:1px;border-top-style:solid;border-top-color:#f5f5f5;text-align:center;color:#777;font-weight:normal;margin:0px;padding:0px;padding-top:25px;line-height:15px;font-size:10px;font-family:Helvetica, Arial, sans-serif;">
+								
+								<a href="https://twitter.com/intent/user?screen_name=MelbourneSystem">
+									<img src="https://melbourne-systems.s3.amazonaws.com/asset/file/53719d7b57817ea11000090d/icon-twitter.png" border="0" width="37" height="37" alt="linked in" style="width:37px;height:37px;">
+								</a>
+
+								<a href="http://www.facebook.com/plugins/like.php?href=http://launch.ly&amp;layout=standard&amp;action=like&amp;colorscheme=light">
+									<img src="https://melbourne-systems.s3.amazonaws.com/asset/file/53719d7857817eb20a000923/icon-facebook.png" border="0" width="37" height="37" alt="Facebook" style="width:37px;height:37px;">
+								</a>
+
+								<a href="https://plus.google.com/share?url=http://launch.ly">
+									<img src="https://melbourne-systems.s3.amazonaws.com/asset/file/53719d7957817ec2050008e3/icon-google-plus.png" border="0" width="37" height="37" alt="linked in" style="width:37px;height:37px;">
+								</a>
+								
+								<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://launch.ly&source=launch.ly">
+									<img src="https://melbourne-systems.s3.amazonaws.com/asset/file/53719d7a57817eb20a000924/icon-linkedin.png" border="0" width="37" height="37" alt="linked in" style="width:37px;height:37px;">
+								</a>
+								
+							</p>
+						</td>
+					</tr>
+				</table>
+
+			</td>
+		</tr>
+						
+		<tr>
+			<td style="font-size:14pt;">&nbsp;</td>
+		</tr>
+
+	</table>
+						
+	<p class="footer">
+		<br>
+		{{ 'launch.ly' | link: 'http://launch.ly' }} | *Made by {{ 'Melbourne Systems' | link: 'http://melbourne-systems.com' }}
+		<br>
+		<br>
+		<a href="https://goo.gl/maps/oPy0W">Suite 19, 20 Enterprise Drive, Bundoora<br>
+		Victoria, Australia 3083</a><br>
+		<br>
+		+61 3 9913 0514<br>
+		<br>
+		{{ account.created_at | copyright }} {{ 'Melbourne Systems' | link: 'http://melbourne-systems.com' }}. All rights reserved. <br>
+	</p>
+
+	<p>&nbsp;</p>				 
+						
+</body>
+</html>
